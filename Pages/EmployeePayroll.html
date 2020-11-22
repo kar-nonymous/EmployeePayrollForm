@@ -89,46 +89,46 @@
             border: Opx solid green; 
         }
         .label 
-{
-    min-width: 140px; 
-}
-    label {
-     padding: 12px 12px 12px 0;
-     display: inline-block; 
-    }
-    .text {
-     font-size: 16px; 
-    color: #42515f; 
-    opacity: 1; 
-    font-family: Roboto; 
-    }
-    .input {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc;
-     border-radius: 4px; 
-    resize: vertical; 
-    }
-    .profile-radio-content 
         {
-            display: flex; flex-direction: row; 
-        } 
-     .profile-radio-content > label {
-        display: flex; flex-direction: row; align-items: center; 
-       } 
-     .profile {
-        width: 40px; border-radius: 50%; margin-left: 12px; 
-       } 
-    select {
+            min-width: 140px; 
+        }
+        label {
+        padding: 12px 12px 12px 0;
+        display: inline-block; 
+        }
+        .text {
+        font-size: 16px; 
+        color: #42515f; 
+        opacity: 1; 
+        font-family: Roboto; 
+        }
+        .input {
+        width: 100%; 
         padding: 12px; 
-        border: 1px solid #CCC;
+        border: 1px solid #ccc;
         border-radius: 4px; 
-        resize: vertical;
-        font: normal normal normal 16px Roboto;
-        letter-spacing: 0px; 
-        color: lid42515f; 
-        background-color: transparent; 
-       }
+        resize: vertical; 
+        }
+        .profile-radio-content 
+            {
+                display: flex; flex-direction: row; 
+            } 
+        .profile-radio-content, label {
+            display: flex; flex-direction: row; align-items: center; 
+        } 
+        .profile {
+            width: 40px; border-radius: 50%; margin-left: 12px; 
+        } 
+        select {
+            padding: 12px; 
+            border: 1px solid #CCC;
+            border-radius: 4px; 
+            resize: vertical;
+            font: normal normal normal 16px Roboto;
+            letter-spacing: 0px; 
+            color: lid42515f; 
+            background-color: transparent; 
+        }
 
        .buttonParent {
         display: flex;
@@ -160,7 +160,6 @@
         text-decoration: none; 
        text-align: center;
        } 
-
         error-output
         {
         margin-left:10px;
@@ -205,6 +204,36 @@
             <label> <input type="radio" id="profile4" name="profile" value="../Assets/profile-images/Ellipse -4.png" required> 
             <img class="profile" id='image4' src="../Assets/profile-images/Ellipse -4.png"> </label>
         </div>
+    </div>
+    <!-- UC: 4 -->
+    <div class="row-content">
+        <label class="label text" for="gender">Gender</label> 
+        <div> 
+            <input type="radio" id="male" name="gender" value="male">
+            <label class="text" for="male">Male</label> 
+            <input type="radio" id="female" name="gender" value="female">
+            <label class="text" for="female">Female</label> 
+        </div> 
+    </div>
+    <div class="row-content">
+        <label class="label text" for="department">Department</label>
+        <div> 
+            <input class="checkbox" type="checkbox" id="hr" name="department" value="HR">
+            <label class="text" for="hr">HR</label> 
+            <input class="checkbox" type="checkbox" id="sales" name="department" value="Sales">
+            <label class="text" for="sales">Sales</label>
+            <input class="checkbox" type="checkbox" id="finance" name="department" value="Finance">
+            <label class="text" for="finance">Finance</label> 
+            <input class="checkbox" type="checkbox" id="engineer" name="department" value="Engineer"> 
+            <label class="text" for="engineer">Engineer</label> 
+            <input class="checkbox" type="checkbox" id="others" name="department" value="Others">
+            <label class="text" for="others">Others</label>
+        </div> 
+    </div>
+    <div class="row-content"> 
+        <label class="label text" for="salary">Choose your salary: </label> 
+        <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+        <output class="salary-output text" for="salary">400000</output> 
     </div>
 </body>
 </html>
